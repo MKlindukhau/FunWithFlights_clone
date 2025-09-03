@@ -15,7 +15,7 @@ builder.Services
 
 builder.Services.AddSingleton<IFlightsProvidersFactory, FlightsProvidersFactory>();
 builder.Services.AddSingleton<IFlightsAggregatorService, FlightsAggregatorServiceService>();
-builder.Services.AddHttpClient<FlightsProvidersFactory>();
+builder.Services.AddHttpClient();
 
 builder.Services.AddOptions<ApiUrlsOptions>().Configure<IConfiguration>((options, configuration) =>
 {

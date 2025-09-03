@@ -6,14 +6,14 @@ namespace FlightsAggregator;
 public class FlightsProvidersFactory : IFlightsProvidersFactory
 {
     private readonly IOptions<ApiUrlsOptions> _apiUrlsOptions;
-    private readonly HttpClient _httpClient;
+    private readonly IHttpClientFactory _httpClientFactory;
     private readonly ILoggerFactory _loggerFactory;
     private readonly ILogger<FlightsProvidersFactory> _logger;
 
-    public FlightsProvidersFactory(IOptions<ApiUrlsOptions> apiUrlsOptions, HttpClient httpClient, ILoggerFactory loggerFactory)
+    public FlightsProvidersFactory(IOptions<ApiUrlsOptions> apiUrlsOptions, IHttpClientFactory httpClientFactory, ILoggerFactory loggerFactory)
     {
         _apiUrlsOptions = apiUrlsOptions;
-        _httpClient = httpClient;
+        _httpClientFactory = httpClientFactory;
         _loggerFactory = loggerFactory;
 
         _logger = _loggerFactory.CreateLogger<FlightsProvidersFactory>();
@@ -35,6 +35,6 @@ public class FlightsProvidersFactory : IFlightsProvidersFactory
         _logger.LogInformation($"Urls: {string.Join("; ", urls)}");
 
         return Array.ConvertAll<string, IFlightsProvider>(_apiUrlsOptions.Value.ApiUrls,
-            x => new FlightsProvider(_httpClient, x, _loggerFactory.CreateLogger<FlightsProvider>()));
+            x => new FlightsProvider(_httpClientFactory.CreateClient(), x, _loggerFactory.CreateLogger<FlightsProvider>()));
     }
 }
