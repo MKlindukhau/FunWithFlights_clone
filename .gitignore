@@ -11,7 +11,5 @@
 /.vs/ProjectSettings.json
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
-/FunWithFlights.Tests/bin/Debug/net8.0
-/FunWithFlights.Tests/obj
 /FlightsAggregator.Tests/bin/Debug/net8.0
 /FlightsAggregator.Tests/obj
