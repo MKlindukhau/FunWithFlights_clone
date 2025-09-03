@@ -1,14 +1,24 @@
+using Microsoft.Extensions.Logging;
+
 namespace FlightsAggregator;
 
-public class FlightsAggregatorServiceService(IFlightsProvidersFactory flightsProvidersFactory) : IFlightsAggregatorService
+public class FlightsAggregatorServiceService(IFlightsProvidersFactory flightsProvidersFactory, ILogger<FlightsProvidersFactory> logger) : IFlightsAggregatorService
 {
     private readonly IFlightsProvidersFactory _flightsProvidersFactory = flightsProvidersFactory;
+    private readonly ILogger<FlightsProvidersFactory> _logger = logger;
 
     public async Task<Flight[]> GetAllFlightsAsync()
     {
         var providers = _flightsProvidersFactory.GetFlightsProviders();
 
-        if (providers.Length == 0) return [];
+        _logger.LogInformation("Providers are initialized");
+
+        if (providers.Length == 0)
+        {
+            _logger.LogInformation("Empty providers");
+
+            return [];
+        }
 
         var getFLightsTasks = providers.Select(x => x.GetFlightsAsync());
         var results = await Task.WhenAll(getFLightsTasks);
