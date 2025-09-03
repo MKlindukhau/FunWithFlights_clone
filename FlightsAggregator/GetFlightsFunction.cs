@@ -12,7 +12,7 @@ public class GetFlightsFunction(IFlightsAggregatorService flightsAggregatorServi
     private readonly IFlightsAggregatorService _flightsAggregatorService = flightsAggregatorService;
 
     [Function("GetFlightsFunction")]
-    public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = "flights")] HttpRequest req)
+    public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = "routes")] HttpRequest req)
     {
         _logger.LogInformation("C# HTTP trigger function processed a request.");
 
