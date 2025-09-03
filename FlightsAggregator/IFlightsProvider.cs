@@ -2,5 +2,5 @@ namespace FlightsAggregator;
 
 public interface IFlightsProvider
 {
-    Task<Flight[]> GetFlightsAsync();
+    Task<Flight[]> GetFlightsAsync(CancellationToken waitResponseCancellationToken);
 }
