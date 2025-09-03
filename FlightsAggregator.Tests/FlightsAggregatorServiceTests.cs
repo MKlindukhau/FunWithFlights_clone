@@ -1,8 +1,7 @@
-using FlightsAggregator;
 using Microsoft.Extensions.Logging;
 using Moq;
 
-namespace FunWithFlights.Tests;
+namespace FlightsAggregator.Tests;
 
 public class FlightsAggregatorServiceTests
 {
