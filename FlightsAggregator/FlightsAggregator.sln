@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsAggregator", "FlightsAggregator.csproj", "{05AC91C8-D4CC-48D8-9A24-E8A35D2996C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithFlights.Tests", "..\FunWithFlights.Tests\FunWithFlights.Tests.csproj", "{2232E960-0CCD-446F-871B-27781E710DE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{05AC91C8-D4CC-48D8-9A24-E8A35D2996C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05AC91C8-D4CC-48D8-9A24-E8A35D2996C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05AC91C8-D4CC-48D8-9A24-E8A35D2996C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2232E960-0CCD-446F-871B-27781E710DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2232E960-0CCD-446F-871B-27781E710DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2232E960-0CCD-446F-871B-27781E710DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2232E960-0CCD-446F-871B-27781E710DE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

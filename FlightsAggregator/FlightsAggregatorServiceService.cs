@@ -15,7 +15,7 @@ public class FlightsAggregatorServiceService(IFlightsProvidersFactory flightsPro
 
         if (providers.Length == 0)
         {
-            _logger.LogInformation("Empty providers");
+            _logger.LogWarning("Empty providers");
 
             return [];
         }
