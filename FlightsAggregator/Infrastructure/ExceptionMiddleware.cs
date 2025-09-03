@@ -2,7 +2,7 @@ using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Middleware;
 using Microsoft.Extensions.Logging;
 
-namespace FlightsAggregator;
+namespace FlightsAggregator.Infrastructure;
 
 public class ExceptionMiddleware(ILogger<ExceptionMiddleware> log) : IFunctionsWorkerMiddleware
 {

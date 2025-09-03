@@ -1,7 +1,8 @@
+using FlightsAggregator.Models;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
 
-namespace FlightsAggregator;
+namespace FlightsAggregator.Services;
 
 public class FlightsProvider(HttpClient httpClient, string apiUrl, ILogger<FlightsProvider> logger) : IFlightsProvider
 {

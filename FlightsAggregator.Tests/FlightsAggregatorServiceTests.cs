@@ -1,3 +1,5 @@
+using FlightsAggregator.Models;
+using FlightsAggregator.Services;
 using Microsoft.Extensions.Logging;
 using Moq;
 

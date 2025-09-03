@@ -1,4 +1,4 @@
-namespace FlightsAggregator;
+namespace FlightsAggregator.Settings;
 
 public class ApiUrlsOptions
 {

@@ -1,7 +1,8 @@
+using FlightsAggregator.Settings;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace FlightsAggregator;
+namespace FlightsAggregator.Services;
 
 public class FlightsProvidersFactory : IFlightsProvidersFactory
 {

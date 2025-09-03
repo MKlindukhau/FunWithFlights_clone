@@ -11,5 +11,6 @@
 /.vs/ProjectSettings.json
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
-/FlightsAggregator.Tests/bin/Debug/net8.0
+/FlightsAggregator.Tests/bin
 /FlightsAggregator.Tests/obj
+/.vs

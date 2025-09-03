@@ -1,4 +1,6 @@
-namespace FlightsAggregator;
+using FlightsAggregator.Models;
+
+namespace FlightsAggregator.Services;
 
 public interface IFlightsAggregatorService
 {

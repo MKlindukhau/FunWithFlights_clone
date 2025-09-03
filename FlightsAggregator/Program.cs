@@ -1,4 +1,6 @@
-using FlightsAggregator;
+using FlightsAggregator.Infrastructure;
+using FlightsAggregator.Services;
+using FlightsAggregator.Settings;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Builder;
 using Microsoft.Extensions.Configuration;

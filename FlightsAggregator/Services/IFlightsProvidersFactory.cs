@@ -1,4 +1,4 @@
-namespace FlightsAggregator;
+namespace FlightsAggregator.Services;
 
 public interface IFlightsProvidersFactory
 {

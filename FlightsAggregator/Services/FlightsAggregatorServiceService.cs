@@ -1,6 +1,7 @@
+using FlightsAggregator.Models;
 using Microsoft.Extensions.Logging;
 
-namespace FlightsAggregator;
+namespace FlightsAggregator.Services;
 
 public class FlightsAggregatorServiceService(IFlightsProvidersFactory flightsProvidersFactory, ILogger<FlightsAggregatorServiceService> logger) : IFlightsAggregatorService
 {
