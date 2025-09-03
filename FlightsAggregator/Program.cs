@@ -22,4 +22,6 @@ builder.Services.AddOptions<ApiUrlsOptions>().Configure<IConfiguration>((options
     configuration.GetSection(ApiUrlsOptions.ApiUrlsSettings).Bind(options);
 });
 
+builder.UseMiddleware<ExceptionMiddleware>();
+
 builder.Build().Run();
