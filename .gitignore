@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.vsidx
+/.vs/FunWithFlights/v17/.wsuo
+/.vs/FunWithFlights/v17/DocumentLayout.backup.json
+/.vs/FunWithFlights/v17/DocumentLayout.json
+/.vs/FunWithFlights/v17/TestStore/0/000.testlog
+/.vs/FunWithFlights/v17/TestStore/0/testlog.manifest
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json

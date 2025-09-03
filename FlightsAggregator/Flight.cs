@@ -1,0 +1,3 @@
+namespace FlightsAggregator;
+
+public record Flight(string Airline, string SourceAirport, string DestinationAirport, string CodeShare, int Stops,  string? Equipment);
