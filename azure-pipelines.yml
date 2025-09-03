@@ -44,7 +44,7 @@ stages:
         command: 'test'
         projects: |
           $(workingDirectory)/../FlightsAggregator.Tests/FlightsAggregator.Tests.csproj
-        arguments: '--configuration Release --no-restore'
+        arguments: '--configuration Release'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
